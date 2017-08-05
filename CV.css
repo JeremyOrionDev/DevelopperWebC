@@ -1,0 +1,190 @@
+button
+{
+position: absolute;
+display: block;
+left: 30px;
+color: black;
+border-radius: 15px;
+background-color: grey;
+border-color: darkgrey;
+}
+
+.fleche{
+  width: 20px
+}
+
+#hidden{
+position: relative;
+left: -4%;
+}
+#listComp{
+position: relative;
+top: 0;
+}
+#gris_cote
+{
+    display:block;
+position: absolute;
+top: 0;
+background-color: grey;
+width: 20%;
+height: 80%;
+border-bottom-right-radius:20px;
+}
+.image
+{
+position: relative;
+z-index: 20;
+top:0;
+width: 80%;
+margin-left: 5%;
+margin-top: 5%;
+border-radius: 50%;
+filter: brightness(90%);
+filter: contrast(110%);
+}
+#comp
+{
+position: relative;
+margin-left: 5px;
+font-size: 1.2em;
+font-weight: 800;
+}
+
+#adresse
+{
+position: relative;
+text-align: right;
+margin-right: 3%;
+font-size:1.3em;
+}
+#phone{
+  filter: brightness(50%);
+}
+#Visual
+{
+font-size: 0.9em;
+font-weight: 550;
+color: black;
+}
+
+.fondGris
+{
+position: relative;
+    display:block;
+top: -10px;
+left: 0;
+background-color: lightgrey;
+height: 200%;
+width: 90%;
+margin-bottom: 10%;
+padding-left: 25%;
+border-radius: 0px 0px 30px 0px;
+}
+#titreformation
+{
+color: grey;
+margin-top: 20px;
+margin-left: 10px;
+}
+#nomformation
+{
+font-size: 3em;
+
+}
+#detailformation
+{
+margin-left: 30px;
+text-align: left;
+margin-right: 20px;
+}
+.blocExp{
+margin-left: 2%;
+
+}
+.textemilieu
+{
+  display:block;
+position: absolute;
+bottom: 0;
+top: 25.5%;
+background-color: lightpink;
+left: 20%;
+padding-left:20%;
+/*height: 160%;*/
+width: 70%;
+padding-left:10%;
+margin-top: 0;
+border-radius:0px 30px 0px 0px;
+}
+#nomexp7{margin-left: 5%;}
+#nomexp{margin-left: 3%;}
+#detailexp1,#detailexp2,#detailexp3,#detailexp4,#detailexp5,#detailexp6,#detailexp7{margin-left: 10%;}
+#nomexp1,#nomexp2,#nomexp3,#nomexp4,#nomexp5,#nomexp6
+{
+margin-left: 5%;
+
+}
+#lieuexp
+{
+margin-left: 10%;
+}
+#detailexp
+{
+margin-left: 20%;
+}
+.titreExp{
+
+  margin-left: 10%;
+}
+
+body{
+  background-color: #47403F;
+}
+#lieuexp{visibility: hidden;}
+.detailex1,.detailex2,.detailex3,.detailex4,.detailex5,.detailex6,.detailex7{display: none;}
+#nomexp1:hover ~.detailex1{display: block;}
+#nomexp2:hover ~.detailex2{display: block;}
+#nomexp3:hover ~.detailex3{display: block;}
+#nomexp4:hover ~.detailex4{display: block;}
+#nomexp5:hover ~.detailex5{display: block;}
+#nomexp6:hover ~.detailex6{display: block;}
+#nomexp7:hover ~.detailex7{display: block;}
+/* partie mobile */
+@media screen and (max-width:40em){
+
+#titreformation{margin-left: 10%;}
+#nomformation{display: none;}
+#comp{  font-size: 1em;font-weight: 600;}
+.textemilieu{
+z-index: 10;
+left: 0;
+padding-left: 10%;
+border-radius:0;
+width: 100%;
+bottom: 2%;
+    top:56%;
+}
+#gris_cote{
+width: 30%;
+height: 60%;
+z-index: 0;
+}
+#hidden{
+display: none;
+left: 0;
+}
+.fondGris{
+position: absolute;
+margin-top: -2%;
+width: 100%;
+height: 60%;
+}
+#comp:hover + #hidden, #hidden:hover{
+z-index:50;
+display: block;
+  background-color:red;
+  position:relative;
+}
+  .fleche{visibility:visible;}
+}/*fin mobile*/
